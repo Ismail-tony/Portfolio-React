@@ -1,9 +1,9 @@
 import React from 'react'
 
-function project() {
-  return (
-    <div>project</div>
-  )
+const Project = () => {
+    return (
+        <div>project</div>
+    )
 }
 
-export default project
+export default Project
