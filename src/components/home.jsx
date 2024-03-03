@@ -1,10 +1,8 @@
-import React from 'react'
-
 const Home =() => {
     return (
     <div className='row'>
         <div className='col-md-6 col-sm-12'>
-            <h1>My name is Ismail Babalola</h1>
+            <h1>My name is <span className="text-danger">Ismail Babalola</span></h1>
             <h2>I am a Web Developer</h2>
             <h2>Based in LDN, UK</h2>
             <a href="https://github.com/Ismail-tony"></a>
