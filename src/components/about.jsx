@@ -1,4 +1,7 @@
 import Container  from "react-bootstrap/Container"
+
+import htmlIcon from "../assets/html-5.svg"
+
 const About = () => {
     return (
         <Container className='sm col-lg-6 text-center'>
@@ -15,14 +18,9 @@ const About = () => {
 
             <div className="techStack">
                 <h1> &lt; tech_stack &gt;</h1>
-                <ul>
-                    <li>HTTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>JQuerry</li>
-                </ul>
-
+                <div className="techIcon">
+                    <img src={htmlIcon} alt="htmlIcon" style={{width: "100px", height: "100px"}}/>
+                </div>
             </div>
         </Container>
     )
