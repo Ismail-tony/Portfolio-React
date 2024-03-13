@@ -11,17 +11,16 @@ const About = () => {
             <div className="row">
                 <div className="sm" id="aboutMe">
                     <p>
-                        My name is Ismail Babalola. I am Originally from Lagos Nigeria. I moved to the UK in 2010. 
+                        My name is Ismail Babalola. I am Originally from Lagos Nigeria, I moved to the UK in 2010. 
                         I graduated from Kingston University with a bachelor degree in Aerospace Engineering.
-                        I have since then moved to the Edx bootcamp in Frontend Development to learn more about web development.
-                        Once I am done with the bootcamp I want to further develop my skills and knowledge in Javascript and React
+                        I have since then moved to the bootcamp in Frontend Development provided by Edx University of Birmingham to learn more about frontend web development. I want to further develop my skills and knowledge in Javascript and React
                         and I hope to fully get into the industry in the near future.
                     </p>
                 </div>
             </div>
 
             <div className="techStack">
-                <h1> &lt; tech_stack /&gt;</h1>
+                <h1> &lt; Skills /&gt;</h1>
                 <div className="techIcons">
                     <img
                         src={htmlIcon}
