@@ -1,15 +1,14 @@
 import Container from "react-bootstrap/Container";
-import htmlIcon from "../assets/icons/html-5.svg";
-import cssIcon from "../assets/icons/css-3.svg";
-import jsIcon from "../assets/icons/javascript.svg";
-import reactIcon from "../assets/icons/react.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBootstrap, faHtml5, faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons'
+import '../css/about.css'
 
 const About = () => {
     return (
-        <Container className="sm text-center" id="about">
-            <h1> &lt; about_me /&gt;</h1>
-            <div className="row">
-                <div className="sm" id="aboutMe">
+        <Container id="about">
+            <h2 className="text-start"> &lt; about_me /&gt;</h2>
+            <div className="row text-center">
+                <div className="col-lg-6" id="aboutMe">
                     <p>
                         My name is Ismail Babalola. I am Originally from Lagos Nigeria, I moved to the UK in 2010. 
                         I graduated from Kingston University with a bachelor degree in Aerospace Engineering.
@@ -17,31 +16,29 @@ const About = () => {
                         and I hope to fully get into the industry in the near future.
                     </p>
                 </div>
+                <div className="col-lg-6">
+                    <img src="https://avatars.githubusercontent.com/u/139620500?v=4" alt="my image" className="img rounded" style={{width: "200px", height: "200px"}}/>
+                </div>
             </div>
-
-            <div className="techStack">
-                <h1> &lt; Skills /&gt;</h1>
-                <div className="techIcons">
-                    <img
-                        src={htmlIcon}
-                        alt="htmlIcon"
-                        style={{ width: "50px", height: "50px" }}
-                    />
-                    <img
-                        src={cssIcon}
-                        alt="cssIcon"
-                        style={{ width: "50px", height: "50px" }}
-                    />
-                    <img
-                        src={jsIcon}
-                        alt="jsIcon"
-                        style={{ width: "50px", height: "50px" }}
-                    />
-                    <img
-                        src={reactIcon}
-                        alt="reactIcon"
-                        style={{ width: "50px", height: "50px" }}
-                    />
+            
+            <div id="techStack">
+                <h1 className="text-end"> &lt; Skills /&gt;</h1>
+                <div  className="row justify-content-center" id="techIcons">
+                    <div className="col-sm-2">
+                    <FontAwesomeIcon icon={ faHtml5 } style={{ fontSize: '100px', color: "#e34c26"}}/>
+                    </div>
+                    <div className="col-sm-2">
+                    <FontAwesomeIcon icon={ faCss3Alt } style={{ fontSize: '100px', color: "#264de4"}}/>
+                    </div>
+                    <div className="col-sm-2">
+                    <FontAwesomeIcon icon={ faBootstrap } style={{ fontSize: '100px', color: "#7952b3"}}/>
+                    </div>
+                    <div className="col-sm-2">
+                    <FontAwesomeIcon icon={ faJs } style={{ fontSize: '100px', color: "#f0db4f"}}/>
+                    </div>
+                    <div className="col-sm-2">
+                    <FontAwesomeIcon icon={ faReact } style={{ fontSize: '100px', color: "#61dbfb"}}/>
+                    </div>
                 </div>
             </div>
         </Container>
