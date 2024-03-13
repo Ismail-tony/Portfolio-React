@@ -21,10 +21,7 @@ const Contact = () => {
             <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" placeholder="_message" />
         </Form.Group>
-
-        <Form.Group className="" controlId="formBasicSubmit">
-            <Button>Submit</Button>
-        </Form.Group>
+        <Button className="text-center">Submit</Button>
     </Form>
     </Container>
 );

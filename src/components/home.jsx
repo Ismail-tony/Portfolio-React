@@ -1,26 +1,31 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-import { Link } from 'react-router-dom'
+import { Container } from 'react-bootstrap';
+
+
 const Home =() => {
     return (
-    <div className='row'>
-        <div className='sm text-center'>
-            <h1>My name is <span className="text-danger">Ismail Babalola</span></h1>
-            <h2>I am a Web Developer</h2>
-            <h2>Based in LDN, UK</h2>
-            <Link to="https://github.com/Ismail-tony" target="_blank" rel="noopener noreferrer">
-                <GitHubIcon />
-            </Link>
-            <Link to="https://www.linkedin.com/in/ismail-babalola" target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon />
-            </Link>
-            
+        <Container fluid>
+            <div className='row'>
+        
+                <div className='sm col-lg-6 text-center'>
+                    <img src="https://avatars.githubusercontent.com/u/139620500?v=4" alt="my image" className="img rounded-circle" style={{width: "200px", height: "200px"}}/>
+                </div>
+                <div className='sm col-lg-6 text-center'>
+                    <h6> &#47;&#47; My name is <span className="text-danger">Ismail Babalola</span></h6>
+                    <h1> &#123;&ldquo; I am a Web Developer</h1>
+                    <h2>Based in LDN, UK &rdquo;&#125;</h2>
+                    <a href="https://github.com/Ismail-tony" target="_blank" rel="noopener noreferrer">
+                        <GitHubIcon />
+                    </a>
+                    <a href="https://www.linkedin.com/in/ismail-babalola" target="_blank" rel="noopener noreferrer">
+                        <LinkedInIcon />
+                    </a>
+                </div>
         </div>
-        <div className='sm text-center'>
-            <img src="https://avatars.githubusercontent.com/u/106067" alt="my image" className="img-fluid"/>
-        </div>
-    </div>
+        </Container>
+ 
     )
 }
 
