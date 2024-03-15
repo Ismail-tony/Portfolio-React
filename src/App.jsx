@@ -7,6 +7,7 @@ import  Header  from './components/header.jsx'
 import  Footer  from './components/footer.jsx'
 import Home  from './components/home.jsx'
 import './App.css'
+import './index.css'
 
 const App = () => {
   return (

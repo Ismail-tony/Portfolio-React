@@ -1,4 +1,20 @@
-#techIcons {
-    display: flex;
-    justify-content: space-between;
+#techStack {
+  text-align: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-container > div {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 columns with gap */
+  max-width: calc(33.33% - 20px); /* Adjust max-width for 3 columns with gap */
+}
+
+.tech-icon {
+  width: 100%;
+  max-width: 100px;
 }
